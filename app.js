@@ -25,9 +25,15 @@ function getSalary(level) {
     }
     return (salary - salary * 0.075)
 }
+
+function generateID() {
+    let id = Math.floor(generateRandom(1000, 9999))
+    return id;
+}
+
 function Employee(fullname, department, level, image) {
     let x = {
-        id: Math.floor(generateRandom(1000, 9999)),
+        id: generateID(),
         name: fullname,
         dept: department,
         level: level,
@@ -52,7 +58,7 @@ console.log(employee3.id)
 console.log(employee4.id)
 
 
-document.write(`${employee0.name} </br> ${employee0.salary}  </br> ${employee0.id}  </br> `); //this ID just to test it :)
+document.write(`${employee0.name} </br> ${employee0.salary}  </br> `);
 document.write(`</br>`)
 document.write(`${employee1.name} </br> ${employee1.salary}  </br> `);
 document.write(`</br>`)
