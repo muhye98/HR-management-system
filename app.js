@@ -21,7 +21,7 @@ function getSalary(level) {
 }
 function Employee(fullname, department, level, image) {
     let x = {
-        id: Math.random() * 9999,
+        id: Math.floor(Math.random() * 9999),
         name: fullname,
         dept: department,
         level: level,
@@ -40,7 +40,7 @@ let employee5 = Employee("Rana Saleh", "Development	", "Junior");
 let employee6 = Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
 
 
-document.write(`${employee0.name} </br> ${employee0.salary}  </br> `);
+document.write(`${employee0.name} </br> ${employee0.salary}  </br> ${employee0.id}  </br> `); //this ID just to test it :)
 document.write(`</br>`)
 document.write(`${employee1.name} </br> ${employee1.salary}  </br> `);
 document.write(`</br>`)
