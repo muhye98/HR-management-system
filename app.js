@@ -1,6 +1,5 @@
-# HR-management-system
+'use strict'
 
-## I do the work by 1 day but make some changes in lab day
 function getRandomInt(min, max) {
 
     min = Math.ceil(min);
@@ -41,7 +40,6 @@ let employee5 = Employee("Rana Saleh", "Development	", "Junior");
 let employee6 = Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
 
 
-## After that i change rander method from consol . log to doucmant.writ like this :
 document.write(`${employee0.name} </br> ${employee0.salary}  </br> `);
 document.write(`</br>`)
 document.write(`${employee1.name} </br> ${employee1.salary}  </br> `);
@@ -56,11 +54,5 @@ document.write(`${employee5.name} </br> ${employee5.salary}  </br> `);
 document.write(`</br>`)
 document.write(`${employee6.name} </br> ${employee6.salary}  </br> `);
 
-### after that i chage also the random number method for ID from:
 
-getRandomInt(min, max)
 
-### to be like this :
- Math.random() * 9999,
-
-# thats all ^_^ 
