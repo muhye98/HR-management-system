@@ -1,27 +1,33 @@
 'use strict'
 
-function getRandomInt(min, max) {
+function generateRandom(min, max) {
 
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+    let difference = max - min;
+
+    let rand = Math.random();
+
+    rand = Math.floor(rand * difference);
+
+    rand = rand + min;
+
+    return rand;
 }
 
 
 function getSalary(level) {
     let salary;
     if (level === "Senior") {
-        salary = getRandomInt(1500, 2000)
+        salary = Math.floor(generateRandom(1500, 2000))
     } else if (level === "Mid-Senior") {
-        salary = getRandomInt(1000, 1500)
+        salary = Math.floor(generateRandom(1000, 1500))
     } else if (level === "Junior") {
-        salary = getRandomInt(500, 1000)
+        salary = Math.floor(generateRandom(500, 1000))
     }
     return (salary - salary * 0.075)
 }
 function Employee(fullname, department, level, image) {
     let x = {
-        id: Math.floor(Math.random() * 9999),
+        id: Math.floor(generateRandom(1000, 9999)),
         name: fullname,
         dept: department,
         level: level,
