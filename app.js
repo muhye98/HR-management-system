@@ -45,6 +45,12 @@ let employee4 = Employee("Omar Zaid", "Development", "Senior");
 let employee5 = Employee("Rana Saleh", "Development	", "Junior");
 let employee6 = Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
 
+console.log(employee0.id)
+console.log(employee1.id)
+console.log(employee2.id)
+console.log(employee3.id)
+console.log(employee4.id)
+
 
 document.write(`${employee0.name} </br> ${employee0.salary}  </br> ${employee0.id}  </br> `); //this ID just to test it :)
 document.write(`</br>`)
