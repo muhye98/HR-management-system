@@ -1,6 +1,7 @@
 # HR-management-system
 
-## I do the work by 1 day but make some changes in lab day
+## I do the work by 1 day but make some changes in lab day:
+
 function getRandomInt(min, max) {
 
     min = Math.ceil(min);
