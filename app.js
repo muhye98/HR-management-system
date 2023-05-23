@@ -51,8 +51,8 @@ let employee6 = new Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
 
 Employee.prototype.randerEmployee = function () {
     document.write(`<p> Employee name: ${this.name} </p>`);
-    document.write(`<p> Employee name: ${this.dept} </p>`);
-    document.write(`<p> Employee name: ${this.salary} </p>`);
+    document.write(`<p> Employee department: ${this.dept} </p>`);
+    document.write(`<p> Employee salary: ${this.salary} </p>`);
     document.write(`</br>`);
 }
 
