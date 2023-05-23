@@ -27,17 +27,16 @@ let employee6 = new Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
 ### After that i add the department section for each object like this :
 
 
-document.write(<p> Employee name: ${employee0.name} </p>   <p>Department: ${employee0.dept} </p>  <p>Employee salary: ${employee0.salary} </p>  );
-document.write(</br>);
-document.write(<p> Employee name: ${employee1.name} </p>   <p>Department: ${employee1.dept} </p>  <p>Employee salary: ${employee1.salary} </p>  );
-document.write(</br>);
-document.write(<p> Employee name: ${employee2.name} </p>   <p>Department: ${employee2.dept} </p>  <p>Employee salary: ${employee2.salary} </p>  );
-document.write(</br>);
-document.write(<p> Employee name: ${employee3.name} </p>   <p>Department: ${employee3.dept} </p>  <p>Employee salary: ${employee3.salary} </p>  );
-document.write(</br>);
-document.write(<p> Employee name: ${employee4.name} </p>   <p>Department: ${employee4.dept} </p>  <p>Employee salary: ${employee4.salary} </p>  );
-document.write(</br>);
-document.write(<p> Employee name: ${employee5.name} </p>   <p>Department: ${employee5.dept} </p>  <p>Employee salary: ${employee5.salary} </p>  );
-document.write(</br>);
-document.write(<p> Employee name: ${employee6.name} </p>   <p>Department: ${employee6.dept} </p>  <p>Employee salary: ${employee6.salary} </p>  );
-document.write(</br>);
+document.write( Employee name: ${employee0.name}  Department: ${employee0.dept}   Employee salary: ${employee0.salary}   );
+
+document.write( Employee name: ${employee1.name}  Department: ${employee1.dept}   Employee salary: ${employee1.salary}   );
+
+document.write( Employee name: ${employee2.name}  Department: ${employee2.dept}   Employee salary: ${employee2.salary}   );
+
+document.write( Employee name: ${employee3.name}  Department: ${employee3.dept}   Employee salary: ${employee3.salary}   );
+
+document.write( Employee name: ${employee4.name}  Department: ${employee4.dept}   Employee salary: ${employee4.salary}   );
+
+document.write( Employee name: ${employee5.name}  Department: ${employee5.dept}   Employee salary: ${employee5.salary}   );
+
+document.write( Employee name: ${employee6.name}  Department: ${employee6.dept}   Employee salary: ${employee6.salary}   );
