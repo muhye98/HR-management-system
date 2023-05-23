@@ -1,67 +1,43 @@
 # HR-management-system
 
-## I do the work by 1 day but make some changes in lab day:
+## In the previous lab i do the code like constructor but i change somethings :
 
-function getRandomInt(min, max) {
+### In the main function i add (this) to name parameter of the objects like this:
 
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+ function Employee(fullname, department, level, image) {
+
+    this.id = generateID();
+    this.name = fullname;
+    this.dept = department;
+    this.level = level;
+    this.image = image;
+    this.salary = getSalary(level);
 }
 
+### And when i creat a new objects must add (new) before the function name like this :
 
-function getSalary(level) {
-    let salary;
-    if (level === "Senior") {
-        salary = getRandomInt(1500, 2000)
-    } else if (level === "Mid-Senior") {
-        salary = getRandomInt(1000, 1500)
-    } else if (level === "Junior") {
-        salary = getRandomInt(500, 1000)
-    }
-    return (salary - salary * 0.075)
-}
-function Employee(fullname, department, level, image) {
-    let x = {
-        id: Math.random() * 9999,
-        name: fullname,
-        dept: department,
-        level: level,
-        image: image,
-        salary: getSalary(level)
-    }
-    return x;
-}
+let employee0 = new Employee("Ghazi Samer", "Administration", "Senior",);
+let employee1 = new Employee("Lana Ali", "Finance", "Senior");
+let employee2 = new Employee("Tamara Ayoub", "Marketing", "Senior");
+let employee3 = new Employee("Safi Walid", "Administration", "Mid-Senior");
+let employee4 = new Employee("Omar Zaid", "Development", "Senior");
+let employee5 = new Employee("Rana Saleh", "Development	", "Junior");
+let employee6 = new Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
 
-let employee0 = Employee("Ghazi Samer", "Administration", "Senior",);
-let employee1 = Employee("Lana Ali", "Finance", "Senior");
-let employee2 = Employee("Tamara Ayoub", "Marketing", "Senior");
-let employee3 = Employee("Safi Walid", "Administration", "Mid-Senior");
-let employee4 = Employee("Omar Zaid", "Development", "Senior");
-let employee5 = Employee("Rana Saleh", "Development	", "Junior");
-let employee6 = Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
+### After that i add the department section for each object like this :
 
 
-## After that i change rander method from consol . log to doucmant.writ like this :
-document.write(`${employee0.name} </br> ${employee0.salary}  </br> `);
-document.write(`</br>`)
-document.write(`${employee1.name} </br> ${employee1.salary}  </br> `);
-document.write(`</br>`)
-document.write(`${employee2.name} </br> ${employee2.salary}  </br> `);
-document.write(`</br>`)
-document.write(`${employee3.name} </br> ${employee3.salary}  </br> `);
-document.write(`</br>`)
-document.write(`${employee4.name} </br> ${employee4.salary}  </br> `);
-document.write(`</br>`)
-document.write(`${employee5.name} </br> ${employee5.salary}  </br> `);
-document.write(`</br>`)
-document.write(`${employee6.name} </br> ${employee6.salary}  </br> `);
-
-### after that i chage also the random number method for ID from:
-
-getRandomInt(min, max)
-
-### to be like this :
- Math.random() * 9999,
-
-# thats all ^_^ 
+document.write(<p> Employee name: ${employee0.name} </p>   <p>Department: ${employee0.dept} </p>  <p>Employee salary: ${employee0.salary} </p>  );
+document.write(</br>);
+document.write(<p> Employee name: ${employee1.name} </p>   <p>Department: ${employee1.dept} </p>  <p>Employee salary: ${employee1.salary} </p>  );
+document.write(</br>);
+document.write(<p> Employee name: ${employee2.name} </p>   <p>Department: ${employee2.dept} </p>  <p>Employee salary: ${employee2.salary} </p>  );
+document.write(</br>);
+document.write(<p> Employee name: ${employee3.name} </p>   <p>Department: ${employee3.dept} </p>  <p>Employee salary: ${employee3.salary} </p>  );
+document.write(</br>);
+document.write(<p> Employee name: ${employee4.name} </p>   <p>Department: ${employee4.dept} </p>  <p>Employee salary: ${employee4.salary} </p>  );
+document.write(</br>);
+document.write(<p> Employee name: ${employee5.name} </p>   <p>Department: ${employee5.dept} </p>  <p>Employee salary: ${employee5.salary} </p>  );
+document.write(</br>);
+document.write(<p> Employee name: ${employee6.name} </p>   <p>Department: ${employee6.dept} </p>  <p>Employee salary: ${employee6.salary} </p>  );
+document.write(</br>);
