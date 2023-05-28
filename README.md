@@ -1,42 +1,43 @@
 # HR-management-system
 
-## In the previous lab i do the code like constructor but i change somethings :
+# The main change in this lab :
+We did not use any of documant.write()
+and we add the class for the container bu useing Js
+and i learned how to contain all of the element i want inside the class or the container by using Js also like this :
 
-### In the main function i add (this) to name parameter of the objects like this:
+let body = document.getElementsByClassName("employees-container")[0];
+    let divE = document.createElement("div");
+    body.appendChild(divE);
 
- function Employee(fullname, department, level, image) {
+    let emplyeeImg = document.createElement("img");
+    emplyeeImg.src = this.image;
+    emplyeeImg.alt = this.name;
+    divE.appendChild(emplyeeImg);
 
-    this.id = generateID();
-    this.name = fullname;
-    this.dept = department;
-    this.level = level;
-    this.image = image;
-    this.salary = getSalary(level);
-}
+    let emplyeePar1 = document.createElement("p");
+    emplyeePar1.textContent = ` EmplyeeName: ${this.name}  -ID: ${this.id} `;
+    divE.appendChild(emplyeePar1);
+    let emplyeePar2 = document.createElement("p");
+    emplyeePar2.textContent = ` Department: ${this.dept}  -Level: ${this.level} `;
+    divE.appendChild(emplyeePar2);
+    let emplyeePar3 = document.createElement("p");
+    emplyeePar3.textContent = ` ${this.salary} `;
+    divE.appendChild(emplyeePar3);
 
-### And when i creat a new objects must add (new) before the function name like this :
+## In this lab i do the styling for the empolyee card by using JS :
+divE.style.border = "2px solid black"
+    divE.style.borderRadius = "10px"
+    divE.style.display = "flex"
+    divE.style.flexDirection = "column"
+    divE.style.alignItems = "center"
+    divE.style.width = "330px"
+    divE.style.height = "330px"
+    divE.style.background = "#A4D0A4"
+    divE.style.margin = " 0 auto"
+    emplyeeImg.style.width = "270px"
+    emplyeeImg.style.height = "220px"
+    emplyeeImg.style.borderRadius = "10px"
+    emplyeeImg.style.marginTop = "10px"
+    emplyeePar1.style.marginTop = "20px"
+ 
 
-let employee0 = new Employee("Ghazi Samer", "Administration", "Senior",);
-let employee1 = new Employee("Lana Ali", "Finance", "Senior");
-let employee2 = new Employee("Tamara Ayoub", "Marketing", "Senior");
-let employee3 = new Employee("Safi Walid", "Administration", "Mid-Senior");
-let employee4 = new Employee("Omar Zaid", "Development", "Senior");
-let employee5 = new Employee("Rana Saleh", "Development	", "Junior");
-let employee6 = new Employee("Hadi Ahmad", "Finance	", "Mid-Senior");
-
-### After that i add the department section for each object like this :
-
-
-document.write( Employee name: ${employee0.name}  Department: ${employee0.dept}   Employee salary: ${employee0.salary}   );
-
-document.write( Employee name: ${employee1.name}  Department: ${employee1.dept}   Employee salary: ${employee1.salary}   );
-
-document.write( Employee name: ${employee2.name}  Department: ${employee2.dept}   Employee salary: ${employee2.salary}   );
-
-document.write( Employee name: ${employee3.name}  Department: ${employee3.dept}   Employee salary: ${employee3.salary}   );
-
-document.write( Employee name: ${employee4.name}  Department: ${employee4.dept}   Employee salary: ${employee4.salary}   );
-
-document.write( Employee name: ${employee5.name}  Department: ${employee5.dept}   Employee salary: ${employee5.salary}   );
-
-document.write( Employee name: ${employee6.name}  Department: ${employee6.dept}   Employee salary: ${employee6.salary}   );
